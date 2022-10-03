@@ -17,6 +17,71 @@ body {
   background-position: center bottom;
   background-size: contain; }
 
+.main {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px; }
+  .main .main__logo {
+    width: 300px;
+    background: #1d2c67;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-areas: "logo logo logo" "document folder upload";
+    border-radius: 10px 90px 10px 10px;
+    gap: 25px 15px;
+    justify-content: start; }
+    .main .main__logo .logo__logo {
+      grid-area: logo; }
+    .main .main__logo .logo__icon {
+      height: 40px;
+      padding: 10px;
+      background: #0c122c;
+      border-radius: 10px; }
+    .main .main__logo .logo__icon-document {
+      grid-area: document; }
+    .main .main__logo .logo__icon-folder {
+      grid-area: folder; }
+    .main .main__logo .logo__icon-upload {
+      grid-area: upload; }
+  .main .main__information {
+    background: #1d2c67;
+    color: #dddbff;
+    padding: 30px 20px;
+    position: relative; }
+    .main .main__information .information__details {
+      margin-bottom: 10px; }
+    .main .main__information .information__cant {
+      position: absolute;
+      top: -30px;
+      right: 0;
+      margin: 10px;
+      background: white;
+      color: #0c122c;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 1;
+      padding: 10px;
+      border-radius: 10px; }
+      .main .main__information .information__cant .cant__number {
+        font-size: 2.5rem;
+        font-weight: bold; }
+      .main .main__information .information__cant::before {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        right: 0;
+        z-index: -1;
+        border-block-end: 20px solid transparent;
+        border-inline-end: 20px solid white; }
+    .main .main__information .information__range {
+      width: 400px;
+      appearance: none;
+      background: #0c122c; }
+    .main .main__information .information__limit {
+      display: flex;
+      justify-content: space-between; }
+
 .attribution {
   font-size: 11px;
   text-align: center;

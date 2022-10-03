@@ -1,33 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
-<link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-<main class="main">
-    <div class="main__logo" >
-      <img src="./images/icon-document.svg" alt="">
-      <img src="./images/icon-folder.svg" alt="">
-      <img src="./images/icon-upload.svg" alt="">
-      <img src="./images/logo.svg" alt="">
-    </div>
-    <div class="">
-      You’ve used 815 GB of your storage
-      185 GB Left
-      0 GB
-      1000 GB
-    </div>
-  
-</main>
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/CAMILOITT/Fylo-data">Camilo Torres</a>.
-  </footer>
-</body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__logo">
+        <img src="./images/logo.svg" alt="icon logo" class="logo__logo" />
+        <img
+          src="./images/icon-document.svg"
+          alt="icon document"
+          class="logo__icon logo__icon-document"
+        />
+        <img
+          src="./images/icon-folder.svg"
+          alt="icon folder"
+          class="logo__icon logo__icon-folder"
+        />
+        <img
+          src="./images/icon-upload.svg"
+          alt="icon upload"
+          class="logo__icon logo__icon-upload"
+        />
+      </div>
+      <div class="main__information">
+        <p class="information__details">
+          You’ve used <strong class="details__gb">815 GB</strong> of your
+          storage
+        </p>
+        <input type="range" name="" id="" class="information__range" />
+        <span class="information__cant">
+          <span class="cant__number">185</span> GB Left</span
+        >
+        <div class="information__limit">
+          <span class="limit__start">0 GB</span>
+          <span class="limit__limit">1000 GB</span>
+        </div>
+      </div>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/CAMILOITT/Fylo-data">Camilo Torres</a>.
+    </footer>
+  </body>
 </html>

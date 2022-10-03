@@ -36,6 +36,78 @@ body
   background-position: center bottom
   background-size: contain
 
+.main
+  display: flex
+  align-items: flex-end
+  gap: 10px
+  .main__logo
+    width: 300px
+    background: $DarkBlue
+    padding: 40px 30px
+    display: grid
+    grid-template-areas: 'logo logo logo' 'document folder upload'
+    border-radius: 10px 90px 10px 10px
+    gap: 25px 15px
+    justify-content: start
+
+    .logo__logo
+      grid-area: logo
+
+    .logo__icon
+      height: 40px
+      padding: 10px
+      background: $VeryDarkBlue
+      border-radius: 10px
+
+    .logo__icon-document
+      grid-area: document
+
+    .logo__icon-folder
+      grid-area: folder
+
+    .logo__icon-upload
+      grid-area: upload
+  .main__information
+    background: $DarkBlue
+    color: $PaleBlue
+    padding: 30px 20px
+    position: relative
+    .information__details
+      margin-bottom: 10px
+    .information__cant
+      position: absolute
+      top: -30px
+      right: 0
+      margin: 10px
+      background: white
+      color: $VeryDarkBlue
+      display: flex
+      align-items: center
+      gap: 10px
+      z-index: 1
+      padding: 10px
+      border-radius: 10px
+      .cant__number
+        font-size: 2.5rem
+        font-weight: bold
+      &::before
+        content: ''
+        position: absolute
+        bottom: -12px
+        right: 0
+        z-index: -1
+        border-block-end: 20px solid transparent
+        border-inline-end: 20px solid white
+    .information__range
+      width: 400px
+      appearance: none
+      background: $VeryDarkBlue
+
+
+    .information__limit
+      display: flex
+      justify-content: space-between
+
 .attribution
   font-size: 11px
   text-align: center
